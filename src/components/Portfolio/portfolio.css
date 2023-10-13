@@ -1,0 +1,87 @@
+#portfolio {
+  margin-top: 50px;
+}
+#portfolio .portfolio__list {
+  background-color: #F9E4B7;
+  border-radius: 50px;
+  padding: 20px 100px;
+}
+#portfolio .portfolio__list h3 {
+  color: #16154E;
+  font-size: 45px;
+  font-weight: 700;
+}
+#portfolio .portfolio__list__projet {
+  margin-top: 10px;
+}
+#portfolio .portfolio__list__projet .projet, #portfolio .portfolio__list__projet .projet__reverse {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F9E4B7;
+  height: 540px;
+  margin-bottom: 50px;
+}
+#portfolio .portfolio__list__projet .projet.projet__reverse, #portfolio .portfolio__list__projet .projet__reverse.projet__reverse {
+  flex-direction: row-reverse;
+}
+#portfolio .portfolio__list__projet .projet .projet__img, #portfolio .portfolio__list__projet .projet__reverse .projet__img {
+  width: 36%;
+  height: 100%;
+  border-radius: 15px;
+}
+#portfolio .portfolio__list__projet .projet .projet__description, #portfolio .portfolio__list__projet .projet__reverse .projet__description {
+  width: 52%;
+  height: 450px;
+  border-radius: 15px;
+  background-color: #16154E;
+  padding: 45px;
+}
+#portfolio .portfolio__list__projet .projet .projet__description h4, #portfolio .portfolio__list__projet .projet__reverse .projet__description h4 {
+  margin: 0;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+#portfolio .portfolio__list__projet .projet .projet__description ul, #portfolio .portfolio__list__projet .projet__reverse .projet__description ul {
+  display: flex;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+#portfolio .portfolio__list__projet .projet .projet__description ul li, #portfolio .portfolio__list__projet .projet__reverse .projet__description ul li {
+  color: #16154E;
+  background-color: #F9E4B7;
+  list-style: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  margin-right: 20px;
+  font-size: 110%;
+  font-weight: 700;
+}
+#portfolio .portfolio__list__projet .projet .projet__description h5, #portfolio .portfolio__list__projet .projet__reverse .projet__description h5 {
+  margin: 10px 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+}
+#portfolio .portfolio__list__projet .projet .projet__description p, #portfolio .portfolio__list__projet .projet__reverse .projet__description p {
+  margin: 25px 0 45px 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
+#portfolio .portfolio__list__projet .projet .projet__description button, #portfolio .portfolio__list__projet .projet__reverse .projet__description button {
+  color: #16154E;
+  background-color: #F9E4B7;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 170%;
+  font-weight: 700;
+}
+#portfolio .little__title {
+  font-style: italic;
+  font-size: 27px;
+  font-weight: 500;
+}/*# sourceMappingURL=portfolio.css.map */

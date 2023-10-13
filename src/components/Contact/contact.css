@@ -1,0 +1,85 @@
+#contact {
+  background-color: #F9E4B7;
+  border-radius: 50px;
+  margin-top: 50px;
+  padding: 50px 100px;
+  color: white;
+}
+#contact h3 {
+  margin: 0;
+  color: #16154E;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.contact__content .contact__info {
+  background-color: #16154E;
+  width: 40%;
+  padding: 40px 40px 20px 40px;
+  border-radius: 25px;
+}
+.contact__content .contact__info h4 {
+  margin: 0;
+  font-size: 30px;
+}
+.contact__content .contact__info .contact__info__list {
+  margin-top: 22px;
+}
+.contact__content .contact__info .contact__info__list .contact__info__list__bullet {
+  display: flex;
+  align-items: center;
+}
+.contact__content .contact__info .contact__info__list .contact__info__list__bullet i {
+  font-size: 28px;
+  margin-right: 20px;
+}
+.contact__content .contact__info .contact__info__list .contact__info__list__bullet a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  margin: 12px 0;
+}
+.contact__content .contact__info .contact__info__list .contact__info__list__bullet p {
+  font-size: 28px;
+  margin: 12px 0;
+}
+.contact__content .contact__info .contact__info__list .contact__info__list__bullet .fa-desktop {
+  margin-right: 14px;
+}
+.contact__content .contact__message {
+  background-color: #16154E;
+  width: 35%;
+  padding: 40px;
+  border-radius: 25px;
+}
+.contact__content .contact__message form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__content .contact__message form input, .contact__content .contact__message form textarea, .contact__content .contact__message form button {
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 18px 15px;
+}
+.contact__content .contact__message form input::-moz-placeholder, .contact__content .contact__message form textarea::-moz-placeholder {
+  color: #16154E;
+  font-size: 22px;
+  font-weight: 600;
+}
+.contact__content .contact__message form input::placeholder, .contact__content .contact__message form textarea::placeholder, .contact__content .contact__message form button {
+  color: #16154E;
+  font-size: 22px;
+  font-weight: 600;
+}
+.contact__content .contact__message form button {
+  margin: 0;
+  margin-top: 15px;
+  width: 30%;
+}/*# sourceMappingURL=contact.css.map */

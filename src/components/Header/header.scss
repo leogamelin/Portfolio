@@ -1,0 +1,93 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+    .header__name{
+        margin: auto;
+        color: white;
+        font-size: 46px;
+        font-weight: 500;
+    }
+    .header__list{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+        & a {
+            display: inline-block;
+            width: 48%; 
+            text-decoration: none;
+            color: white;   
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+        & a:hover{
+            color: $color-primary; 
+        }
+    }
+}
+
+.focus{
+    @include focus
+}
+
+.focus__italic{
+    @include focus;
+    font-style: italic;
+}
+
+@media (min-width: 500px) {
+    header .header__list{
+        margin-top: 20px;
+        a{
+            width: auto;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header .header__list a{
+        font-size: 22px;
+        color: $color-primary;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        padding: 30px 50px;
+        .header__name{
+            margin-left: 0px;
+        }
+        .header__list{
+            margin-top: 10px;
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    header .header__list {
+        margin-top: 6px;        
+        a{
+            font-size: 30px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        padding: 50px 80px;
+        .header__list {
+            width: 60%;
+            margin: 5px 10px 0px 10px;       
+        }
+}
+}

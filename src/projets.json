@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "title": "Booki",
+        "skills": ["HTML", "CSS", "SASS"],
+        "highlight": "Trouvez votre hébergement pour des vacances de rêve",
+        "description": "Outil de planification de vacances, Booki permet aux utilisateurs de trouver des hébergements et activités dans la ville souhaitée, en l’occurrence Marseille comme on peut le voir sur le projet.",
+        "githubLink": "https://github.com/leogamelin/Projet_2_Booki",
+        "imageKey": "Booki",
+        "detailedDescription": "Outil de planification de vacances, Booki permet aux utilisateurs de trouver des hébergements et activités dans la ville souhaitée, en l’occurrence Marseille comme on peut le voir sur le projet."
+        
+    },
+    {
+        "id": 2,
+        "title": "Sophie Bluel",
+        "skills": ["HTML", "CSS", "JAVASCRIPT"],
+        "highlight": "Portfolio de Sophie Bluel, Designer d'espace",
+        "description": "Création d'une galerie dynamique via une API et intégration des formulaires pour l'inscription, la connexion et l'ajout de projets. Les utilisateurs peuvent également modifier la gallerie avec des options d'édition et de suppression.",
+        "githubLink": "https://github.com/leogamelin/Projet_2_Booki",
+        "imageKey": "SophieBluel",
+        "detailedDescription": "Création d'une galerie dynamique via une API et intégration des formulaires pour l'inscription, la connexion et l'ajout de projets. Les utilisateurs peuvent également modifier la gallerie avec des options d'édition et de suppression.",
+        "problem" : "Les cours de ma formation étaient insuffisants pour maîtriser un langage aussi complexe que JavaScript.",
+        "soluce" : "J'ai approfondi mes connaissances à travers des vidéos YouTube et renforcé ma compréhension par une pratique intensive."
+
+    },
+    {
+        "id": 3,
+        "title": "Menu Maker",
+        "skills": ["GESTION DE PROJET", "AGILE", "VEILLE", "NOTION"],
+        "highlight": "Réalisez et diffusez votre menu personnalisé",
+        "description": "Planification du projet Menu Maker et utilisation des méthodologies agiles pour créer des spécifications techniques. Ma veille technologique a renforcé la collaboration avec l'équipe de développement, ce qui a aidé au succès du projet.",
+        "githubLink": "https://github.com/leogamelin/Projet_2_Booki",
+        "imageKey": "MenuMaker",
+        "detailedDescription": "Planification du projet Menu Maker et utilisation des méthodologies agiles pour créer des spécifications techniques. Ma veille technologique a renforcé la collaboration avec l'équipe de développement, ce qui a aidé au succès du projet.",
+        "problem" : "J'ai rencontré des difficultés à rédiger les spécifications techniques du projet.",
+        "soluce" : "J'ai surmonté ce défi en me mettant véritablement à la place de l'utilisateur lors de la navigation sur le site, ce qui m'a permis d'aborder les spécifications avec une perspective centrée sur l'utilisateur"
+
+    },
+    {
+        "id": 4,
+        "title": "Nina Carducci",
+        "skills": ["HTML", "CSS", "JAVASCRIPT", "SEO"],
+        "highlight": "Portfolio de Nina Carducci, Photographe",
+        "description": "Optimisation du site web de Nina Carducci, ce projet comprenait les améliorations de performances, du référencement et corrections de bugs et présentation de l'audit avant/après optimisation.",
+        "githubLink": "https://github.com/leogamelin/Projet_2_Booki",
+        "imageKey": "NinaCarducci",
+        "detailedDescription": "Optimisation du site web de Nina Carducci, ce projet comprenait les améliorations de performances, du référencement et corrections de bugs et présentation de l'audit avant/après optimisation."
+
+    },
+    {
+        "id": 5,
+        "title": "Kaza",
+        "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+        "highlight": "Chez vous, partout et ailleurs",
+        "description": "Création de la plateforme Kasa en utilisant des composants React, comme un Slideshow pour les annonces, des collapses et un slider. Amélioration de l'expérience utilisateur avec des composants dynamiques.",
+        "githubLink": "https://github.com/leogamelin/Projet_2_Booki",
+        "imageKey": "Kaza",
+        "detailedDescription": "Création de la plateforme Kasa en utilisant des composants React, comme un Slideshow pour les annonces, des collapses et un slider. Amélioration de l'expérience utilisateur avec des composants dynamiques."
+    },
+    {
+        "id": 6,
+        "title": "VieuxGrimoire",
+        "skills": ["NODE", "EXPRESS", "MONGODB"],
+        "highlight": "Ajoutez et notez des livres",
+        "description": "Ajoutez, modifiez, supprimez vos livres et notez les livres d'autres utilisateurs. Application de référencement et de notation de livres.  avec Node.js, Express.js et MongoDB. Création d'un serveur lié à une base de données. ",
+        "githubLink": "https://github.com/leogamelin/Projet_2_Booki",
+        "imageKey": "VieuxGrimoire",
+        "detailedDescription": "Ajoutez, modifiez, supprimez vos livres et notez les livres d'autres utilisateurs. Application de référencement et de notation de livres.  avec Node.js, Express.js et MongoDB. Création d'un serveur lié à une base de données. ",
+        "problem" : "La prise en main de Node et Express a été un défi pour moi, étant donné que ces technologies étaient nouvelles.",
+        "soluce" : "Grâce à une combinaison des cours de ma formation et de tutoriels YouTube, j'ai finalement réussi à comprendre ces outils."
+    }
+
+]

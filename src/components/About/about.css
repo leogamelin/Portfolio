@@ -1,0 +1,128 @@
+#about {
+  padding: 20px 100px;
+}
+
+.about__list {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__list__skill {
+  position: relative;
+  background: #F9E4B7;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+.about__list__skill:hover {
+  background: var(--color);
+  color: var(--color);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--color);
+}
+
+.about__list__skill:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: #16154E;
+}
+
+.about__list__skill span {
+  position: relative;
+  z-index: 1;
+}
+
+.about__list__skill i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.about__list__skill i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background-color: #16154E;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.about__list__skill:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.about__list__skill i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background-color: #16154E;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.about__list__skill:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+.about__me {
+  margin-top: 70px;
+}
+.about__me h3 {
+  color: #F9E4B7;
+  font-size: 45px;
+  font-weight: 700;
+}
+.about__me p {
+  color: white;
+  font-size: 150%;
+  font-weight: 600;
+  line-height: 32px;
+}
+.about__me .about__me__button {
+  margin-top: 60px;
+}
+.about__me .about__me__button .github__link {
+  color: #F9E4B7;
+  background-color: #16154E;
+  width: 220px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 25px;
+  padding: 12px;
+  font-size: 170%;
+  font-weight: 700;
+  text-decoration: none;
+}
+.about__me .about__me__button .github__link .fa-github {
+  margin-right: 20px;
+}
+.about__me .about__me__button .cv__link {
+  color: #16154E;
+  background-color: #F9E4B7;
+  text-decoration: none;
+  width: 370px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 170%;
+  font-weight: 700;
+}/*# sourceMappingURL=about.css.map */

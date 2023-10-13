@@ -1,0 +1,588 @@
+// Header : 
+
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    .header__name{
+        margin: 0;
+        color: white;
+        font-size: 45px;
+        font-weight: 400;
+    }
+    .header__list{
+        display: flex;
+        align-items: center;
+        & a{
+            text-decoration: none;
+            margin: 0;
+            color: $color-primary;    
+            margin-left: 50px;
+            font-size: 22px;
+            font-weight: 500;
+        } 
+    }
+}
+
+.focus{
+    @include focus
+}
+
+.focus__italic{
+    @include focus;
+    font-style: italic;
+}
+
+@media (max-width: 1190px) {
+
+    header{
+        flex-direction: column;
+        padding: 40px 80px;
+        .header__name{
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .header__list{
+            margin: auto;
+            & a{
+                font-size: 26px;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 865px) {
+    header{
+        padding: 30px 60px;
+        .header__list a{
+            font-size: 20px;
+            margin-left: 30px;
+        }
+    }
+}
+
+
+
+// Presentation : 
+
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+#presentation{
+    display: flex;
+    width: 100%;
+    max-height: 800px;
+    .presentation__texte{
+        width: 60%;
+        padding: 20px 0px 20px 100px;
+        & h2{
+            font-size: 520%;
+            color: white;
+            font-weight: 400;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .presentation__texte__hook{
+            margin: 40px 0;
+            font-size: 180%;
+            font-weight: 400;
+        }
+        & p{
+            margin: 30px 0;
+            color: white;
+            font-size: 130%;
+            font-weight: 300;
+            line-height: 32px;
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            &__first{
+                width: 280px;
+                border-radius: 10px;
+                margin-top: 10px;
+                padding: 12px;
+                font-size: 170%;
+                font-weight: 700;
+                color: $color-primary;
+                background-color: $color-secondary;
+            }
+            &__second{
+                width: 370px;
+                border-radius: 10px;
+                margin-top: 20px;
+                padding: 12px 20px;
+                font-size: 170%;
+                font-weight: 700;
+                color: $color-secondary;
+                background-color: $color-primary;
+            }
+        }
+    }
+    .presentation__image{
+        width: 40%;
+        margin-top: 400px;
+        img{
+            margin-left: 70px;
+            width: 80%;
+            opacity: 0.7;
+        }
+    }
+}
+
+// About ::after
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+#about{
+    padding: 20px 100px;
+}
+
+.about__list{
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__list__skill{
+    position: relative;
+    background: $color-primary;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    padding: 10px 30px;
+    transition: 0.5s;
+    margin-top: 15px;
+}
+
+.about__list__skill:hover{
+    background: var(--color);
+    color: var(--color);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--color);
+}
+
+.about__list__skill:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: $color-secondary;
+}
+
+.about__list__skill span{
+    position: relative;
+    z-index: 1;
+}
+
+.about__list__skill i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.about__list__skill i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background-color: $color-secondary;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.about__list__skill:hover i::before{
+    width: 20px;
+    left : 20%
+}
+
+.about__list__skill i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background-color: $color-secondary;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.about__list__skill:hover i::after{
+    width: 20px;
+    left : 80%
+}
+
+.about__me{
+    margin-top: 70px;
+    & h3{
+        color: $color-primary;
+        font-size: 45px;
+        font-weight: 700;
+    }
+    & p{
+        color: white;
+        font-size: 150%;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    .about__me__button{
+        margin-top: 60px;
+        .github__link{
+            color: $color-primary;
+            background-color: $color-secondary;
+            width: 220px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-right: 25px;
+            padding: 12px;
+            font-size: 170%;
+            font-weight: 700;
+            text-decoration: none;
+            .fa-github{
+                margin-right: 20px;
+            }
+        }
+        .cv__link{
+            color: $color-secondary;
+            background-color: $color-primary;
+            text-decoration: none;
+            width: 370px;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 170%;
+            font-weight: 700;
+        }
+    }
+}
+
+// Portfolio : 
+
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+#portfolio {
+    margin-top: 50px;
+    .portfolio__list {
+        background-color: $color-primary;
+        border-radius: 50px;
+        padding: 20px 100px;
+
+        h3 {
+            color: $color-secondary;
+            font-size: 45px;
+            font-weight: 700;
+        }
+    }
+
+    .portfolio__list__projet {
+        margin-top: 10px;
+
+        .projet, .projet__reverse {
+            display: flex;
+            justify-content: space-between;
+            background-color: $color-primary;
+            height: 540px;
+            margin-bottom: 50px;
+
+            &.projet__reverse {
+                flex-direction: row-reverse;
+            }
+
+            .projet__img {
+                width: 36%;
+                height: 100%;
+                border-radius: 15px;
+            }
+
+            .projet__description {
+                width: 52%;
+                height: 450px;
+                border-radius: 15px;
+                background-color: $color-secondary;
+                padding: 45px;
+
+                h4 {
+                    margin: 0;
+                    color: white;
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+
+                ul {
+                    display: flex;
+                    padding: 0;
+                    margin: 10px 0 20px 0;
+
+                    li {
+                        color: $color-secondary;
+                        background-color: $color-primary;
+                        list-style: none;
+                        border-radius: 10px;
+                        padding: 8px 15px;
+                        margin-right: 20px;
+                        font-size: 110%;
+                        font-weight: 700;
+                    }
+                }
+
+                h5 {
+                    margin: 10px 0;
+                    color: white;
+                    font-size: 25px;
+                    font-weight: 500;
+                    line-height: 35px;
+                }
+
+                p {
+                    margin: 25px 0 45px 0;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 35px;
+                }
+
+                button {
+                    color: $color-secondary;
+                    background-color: $color-primary;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    font-size: 170%;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .little__title {
+        font-style: italic;
+        font-size: 27px;
+        font-weight: 500;
+    }
+}
+
+
+@media (max-width: 1324px) {
+    .projet__description--title{
+        font-size: 20px;}
+}
+
+// Contact : 
+
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+#contact{
+    background-color: $color-primary;
+    border-radius: 50px;
+    margin-top: 50px;
+    padding: 50px 100px;
+    color: white;
+    h3{
+        margin: 0;
+        color: $color-secondary;
+        text-align: center  ;
+        font-size: 45px;
+        font-weight: 700;
+    }
+}
+
+.contact__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    .contact__info{
+        background-color: $color-secondary;
+        width: 40%;
+        padding: 40px 40px 20px 40px;
+        border-radius: 25px;
+        h4{
+            margin: 0;
+            font-size: 30px;
+        }
+        .contact__info__list{
+            margin-top: 22px;
+            .contact__info__list__bullet{
+                display: flex;
+                align-items: center;
+                i{
+                    font-size: 28px;
+                    margin-right: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 28px;
+                    margin: 12px 0;
+                }
+                p{
+                    font-size: 28px;
+                    margin: 12px 0;
+                }
+                .fa-desktop{
+                    margin-right: 14px;
+                }                       
+
+            }
+        }
+    }
+    .contact__message{
+        background-color: $color-secondary;
+        width: 35%;
+        padding: 40px;
+        border-radius: 25px;
+        form{
+            display: flex;
+            flex-direction: column;
+            input, textarea, button {
+                background-color: white;
+                border-radius: 8px;
+                margin-bottom: 25px;
+                padding: 18px 15px;
+            }
+            input::placeholder, textarea::placeholder, button  {
+                color: $color-secondary;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            button{
+                margin: 0;
+                margin-top: 15px;
+                width: 30%;
+            }
+        }
+    }
+}
+
+// Footer : 
+
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.footer {
+    width: 100%;
+    padding: 0;
+    background-color: $color-secondary; // Vous pouvez changer la couleur de fond si nécessaire
+    color: $color-primary; // Couleur du texte
+    text-align: center;
+    p {
+        margin: 50px 0;
+        color: white; // Couleur du texte
+        font-size: 25px; // J'ai ajusté la taille de la police pour qu'elle soit plus raisonnable
+    }
+}
+
+
+
+// Modal : 
+
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal__content {
+        background-color: $color-primary;
+        width: 1000px;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        h2 {
+            margin: 0;
+            color: $color-secondary;
+            font-size: 55px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .modal__carousel {
+            width: 70%;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            button {
+                background-color: rgba(255, 255, 255, 1);
+                border: none;
+                padding: 20px 25px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.8);
+                }
+                &:first-child {
+                    position: absolute;
+                    left: 0;
+                }
+
+                &:last-child {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+            img {
+                max-width: 80%;
+                max-height: 700px;
+                display: block;
+                margin: 0;
+            }
+        }
+        .modal__skills__and__links{
+            display: flex;
+            justify-content: space-between;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                margin-left: 0px;
+                padding: 0;
+                li{
+                    list-style: none;
+                    color: $color-primary;
+                    background-color: $color-secondary;
+                    border-radius: 10px;
+                    margin-right: 15px;
+                    padding: 12px 20px;
+                    font-size: 130%;
+                    font-weight: 700;
+                }
+            }
+            a{
+                color: $color-primary;
+                background-color: $color-secondary;
+                border-radius: 10px;
+                margin-right: 25px;
+                padding: 12px 18px;
+                font-size: 130%;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+

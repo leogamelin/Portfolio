@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+header .header__name {
+  margin: 0;
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+}
+header .header__list {
+  display: flex;
+  align-items: center;
+}
+header .header__list a {
+  text-decoration: none;
+  margin: 0;
+  color: #F9E4B7;
+  margin-left: 50px;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+.focus {
+  color: #F9E4B7;
+  font-weight: 600;
+}
+
+.focus__italic {
+  color: #F9E4B7;
+  font-weight: 600;
+  font-style: italic;
+}/*# sourceMappingURL=header.css.map */
